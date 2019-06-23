@@ -98,6 +98,52 @@ window.addEventListener('DOMContentLoaded', function () {
     headerSix.addEventListener('dblclick', function() {
         headerSix.style.color = randomColors();
     });
+
+    
+    let button = document.createElement('button');
+    button.className = 'button1';
+    let button1 = document.getElementsByClassName('button');
+    button.class = button1;
+    let buttonText = document.createTextNode('Click to add new list item');    
+    button.appendChild(buttonText);
+    document.body.appendChild(button);
+
+    let list = document.createElement('li');
+    let listText = document.createTextNode('This is list item 1');
+    list.appendChild(listText);
+    button.appendChild(list);
+
+    let listTexts = ['This is list item 2', 'This is list item 3', 'This is list Item 4'];
+
+    let n = 3;
+
+    
+    function addNewItem() {
+        for (let i = 0; i < listTexts.length; i++) {
+            for (let n = 3; n < 0; n++) {
+                if (n === 1)
+            }
+        }
+    }
+
+
+
+
+    button.addEventListener('click', function() {
+
+    })
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+
         
 });
    
