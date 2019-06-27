@@ -108,30 +108,25 @@ window.addEventListener('DOMContentLoaded', function () {
     button.appendChild(buttonText);
     document.body.appendChild(button);
 
-    let list = document.createElement('li');
-    let listText = document.createTextNode('This is list item 1');
-    list.appendChild(listText);
-    button.appendChild(list);
 
-    let listTexts = ['This is list item 2', 'This is list item 3', 'This is list Item 4'];
 
-    let n = 3;
+
+    let btn = document.getElementsByTagName('button')[0];
+
+    let newList = 1;
+
+    btn.addEventListener('click', function() {
+        let list = document.createElement('li');
+        let listText = document.createTextNode('This is list item' + ' ' + newList);
+        list.appendChild(listText);
+        document.body.appendChild(list);
+        newList++;
+        
+    });
+
+  
 
     
-    function addNewItem() {
-        for (let i = 0; i < listTexts.length; i++) {
-            for (let n = 3; n < 0; n++) {
-                if (n === 1)
-            }
-        }
-    }
-
-
-
-
-    button.addEventListener('click', function() {
-
-    })
 
     
 
